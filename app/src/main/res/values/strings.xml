@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IslamicApp</string>
+    <string name="quran_navigation_label">Quran</string>
+    <string name="hadeeth_navigation_label">Hadeeth</string>
+    <string name="tasbeeh_navigation_label">Tasbeeh</string>
+    <string name="radio_navigation_label">Radio</string>
+    <string name="chapter_name_label">Chapter Name</string>
+</resources>
