@@ -161,6 +161,4 @@ class QuranFragment : Fragment() {
         }
         recyclerView.adapter = adapter
     }
-
-
 }
