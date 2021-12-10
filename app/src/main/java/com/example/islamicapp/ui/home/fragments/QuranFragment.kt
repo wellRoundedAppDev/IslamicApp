@@ -158,7 +158,6 @@ class QuranFragment : Fragment() {
 
                 //Toast.makeText(requireActivity(), "Sura number : $position", Toast.LENGTH_LONG).show()
                 showSuraDetails(item, position)
-
             }
 
         }
