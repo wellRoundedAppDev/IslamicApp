@@ -13,6 +13,7 @@
             android:name=".ui.suraDetails.SuraDetailsActivity"
             android:exported="true"
             android:label="@string/title_activity_sura_details"
+            android:parentActivityName=".ui.home.HomeActivity"
             android:theme="@style/Theme.IslamicApp.NoActionBar" />
         <activity
             android:name=".ui.home.HomeActivity"

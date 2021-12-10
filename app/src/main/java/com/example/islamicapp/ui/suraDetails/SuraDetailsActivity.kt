@@ -17,6 +17,9 @@ class SuraDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sura_details)
 
+        setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         titleTextView = findViewById(R.id.title_text_view)
         initRecyclerView()
 
@@ -28,7 +31,6 @@ class SuraDetailsActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-
         recyclerView = findViewById(R.id.surah_details_recycler_view)
         adapter = VersesAdapter()
         recyclerView.adapter = adapter
