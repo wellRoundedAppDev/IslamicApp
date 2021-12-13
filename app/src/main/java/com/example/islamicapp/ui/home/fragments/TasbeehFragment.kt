@@ -31,11 +31,10 @@ class TasbeehFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initSebhaImage()
-
-        initCounter()
+        initSebhaCounter()
     }
 
-    fun initCounter() {
+    fun initSebhaCounter() {
 
         tsbeehButtonCounter = requireView().findViewById(R.id.tsbeeh_button)
         tsbeehCounter = requireView().findViewById(R.id.tsbeh_counter_textView)
@@ -56,7 +55,6 @@ class TasbeehFragment : Fragment() {
             }
         })
     }
-
 
     fun initSebhaImage() {
 
