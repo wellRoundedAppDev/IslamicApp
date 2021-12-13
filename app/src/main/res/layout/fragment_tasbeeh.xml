@@ -1,7 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorGoldDark">
+    android:background="@drawable/bg3">
+
+    <ImageView
+        android:id="@+id/sebha_head"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="90dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/head_of_seb7a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sebha_body"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/body_of_seb7a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sebha_head" />
+
+    <TextView
+        android:id="@+id/tasbehat_count_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:text="@string/tsbe7at_count"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sebha_body" />
+
+    <TextView
+        android:id="@+id/tsbeh_counter_textView"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_light_gold_rectangle"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasbehat_count_title_textView" />
+
+    <Button
+        android:id="@+id/tsbeeh_button"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_gold_rectangle"
+        android:text="@string/sobhan_allah"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tsbeh_counter_textView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
