@@ -165,9 +165,11 @@ class QuranFragment : Fragment() {
     }
 
     fun showSuraDetails(name: String, pos: Int) {
+
         val intent = Intent(requireActivity(), SuraDetailsActivity::class.java)
         intent.putExtra(Constants.EXTRA_SURA_NAME, name)
         intent.putExtra(Constants.EXTRA_SURA_POSITION, pos)
         startActivity(intent)
     }
+
 }
