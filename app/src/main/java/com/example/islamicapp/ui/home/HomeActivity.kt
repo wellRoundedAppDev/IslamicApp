@@ -40,8 +40,6 @@ class HomeActivity : AppCompatActivity() {
                 return true
             }
         })
-
-
         // bottomNavigation.selectedItemId = R.id.navigation_quran// another way is to remove pushFragment(QuranFragment())
         //and insert this line
     }

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamicApp">
         <activity
+            android:name=".ui.suraDetails.SuraDetailsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_sura_details"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/Theme.IslamicApp.NoActionBar" />
+        <activity
+            android:name=".ui.hadeethDetails.HadeethDetailsActivity"
+            android:exported="true"
+            android:label="hadeethDetailsActivity"
+            android:parentActivityName=".ui.hadeethDetails.HadeethDetailsActivity"
+            android:theme="@style/Theme.IslamicApp.NoActionBar" />
+        <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true"
             android:theme="@style/noActionBar" />
@@ -19,6 +31,7 @@
             android:theme="@style/noActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

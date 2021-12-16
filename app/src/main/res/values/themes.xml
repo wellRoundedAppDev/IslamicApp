@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.IslamicApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.IslamicApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorGold</item>
         <item name="colorPrimaryVariant">@color/colorGoldDark</item>
@@ -12,10 +12,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="homeAsUpIndicator">@drawable/ic_back_button</item>
     </style>
 
     <style name="noActionBar" parent="Theme.IslamicApp">
-
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -23,5 +23,14 @@
     <style name="bottomNavigationBar">
         <item name="android:background">@color/colorGold</item>
     </style>
+
+    <style name="Theme.IslamicApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.IslamicApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.IslamicApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

@@ -1,14 +1,16 @@
 package com.example.islamicapp.ui.home.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islamicapp.R
+import com.example.islamicapp.ui.Constants
 import com.example.islamicapp.ui.home.fragments.adapters.SuraNamesAdapter
+import com.example.islamicapp.ui.suraDetails.SuraDetailsActivity
 
 class QuranFragment : Fragment() {
 
@@ -154,11 +156,20 @@ class QuranFragment : Fragment() {
 
             override fun onItemClick(position: Int, item: String) {
 
-                Toast.makeText(requireActivity(), item, Toast.LENGTH_LONG).show()
-
+                //Toast.makeText(requireActivity(), "Sura number : $position", Toast.LENGTH_LONG).show()
+                showSuraDetails(item, position)
             }
 
         }
         recyclerView.adapter = adapter
     }
+
+    fun showSuraDetails(name: String, pos: Int) {
+
+        val intent = Intent(requireActivity(), SuraDetailsActivity::class.java)
+        intent.putExtra(Constants.EXTRA_SURA_NAME, name)
+        intent.putExtra(Constants.EXTRA_SURA_POSITION, pos)
+        startActivity(intent)
+    }
+
 }
