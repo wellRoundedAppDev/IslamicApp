@@ -31,6 +31,7 @@ class SuraDetailsActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
+
         recyclerView = findViewById(R.id.surah_details_recycler_view)
         adapter = VersesAdapter()
         recyclerView.adapter = adapter

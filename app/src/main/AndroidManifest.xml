@@ -16,6 +16,12 @@
             android:parentActivityName=".ui.home.HomeActivity"
             android:theme="@style/Theme.IslamicApp.NoActionBar" />
         <activity
+            android:name=".ui.hadeethDetails.HadeethDetailsActivity"
+            android:exported="true"
+            android:label="hadeethDetailsActivity"
+            android:parentActivityName=".ui.hadeethDetails.HadeethDetailsActivity"
+            android:theme="@style/Theme.IslamicApp.NoActionBar" />
+        <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true"
             android:theme="@style/noActionBar" />
